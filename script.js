@@ -32,6 +32,7 @@
     // heart-counter
     // coin-counter
     // copy-counter-button
+    // clear-button
     
     
     // class names

@@ -27,10 +27,10 @@ for (const callBtn of callButtons) {
     let coinCount = Number(coinCounter.innerText);
 
     if (coinCount < singleCallBalance) {
-      alert("Insufficient coins! Need at least 20 coins to make a call.");
+      alert("❌Insufficient coins! Need at least 💰20 coins to make a call.");
       return;
     }
-    alert(`a call to ${serviceName} in ${serviceNumber}`);
+    alert(`📞 Calling ${serviceName}  ${serviceNumber}`);
     coinCount -= singleCallBalance;
     coinCounter.innerText = coinCount;
 
@@ -79,7 +79,7 @@ for (const copyBtn of copyButtons) {
       copyBtn.parentNode.parentNode.children[1].children[2].innerText;
     let copyCount = Number(copyCounterValue.innerText);
     copyCount++;
-    alert(`you have copied hotline Number ${hotLineNumber} in clipboard`);
+    alert(`Hotline number ${hotLineNumber} copied to clipboard`);
     copyCounterValue.innerText = copyCount;
     navigator.clipboard.writeText(hotLineNumber);
   });

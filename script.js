@@ -56,12 +56,26 @@ for (const callBtn of callButtons) {
   });
 }
 
+
+// *******Challenge Part*******//
 // Copy Button
-// Challenges Part (10 Marks)//
+
+const copyButtons = document.getElementsByClassName("copy-button")
+const copyCounterValue = document.getElementById("copy-counter-value")
+
+for (const copyBtn of copyButtons){
 // On clicking the Copy button, show an alert and increase the copy count (3 Marks)
+  copyBtn.addEventListener("click",function(e){
+    let copyCount = Number(copyCounterValue.innerText)
+    copyCount++
+    alert("you have copied hotline Number in clipboard")
+    copyCounterValue.innerText=copyCount
+
 // Hotline number will be copied on click so it can be pasted anywhere (4 Marks)
-// id
-// copy-counter-button
-// class names
-//  copy-button
+  })
+}
+
+
+
+
 

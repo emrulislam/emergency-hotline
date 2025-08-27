@@ -47,11 +47,11 @@ for (const callBtn of callButtons) {
     );
     historyItems.innerHTML = `
     <div>
-              <h1 class="text-black font-bold text-xl">${serviceName}</h1>
-              <p class="text-gray-400 text-xl">${serviceNumber}</p>
+              <h1 class="text-black font-bold text-[16px]">${serviceName}</h1>
+              <p class="text-gray-400 text-[16px]">${serviceNumber}</p>
             </div>
             <div>
-              <p class="text-[#111111] text-xl">${new Date().toLocaleTimeString(
+              <p class="text-[#111111] text-[16px]">${new Date().toLocaleTimeString(
                 "en-US",
                 { hour12: true }
               )}</p>

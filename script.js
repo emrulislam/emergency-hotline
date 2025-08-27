@@ -1,4 +1,4 @@
-// heart Icons
+// heart Icons functionality
 
 const heartCounter = document.getElementById("heart-counter");
 const heartButtons = document.getElementsByClassName("heart-button");
@@ -11,13 +11,12 @@ for (const heartBtn of heartButtons) {
   });
 }
 
-//  Call Buttons
+//  Call Buttons functionality
 
 const callButtons = document.getElementsByClassName("call-button");
 const coinCounter = document.getElementById("coin-counter");
 const singleCallBalance = 20;
 const historyContainer = document.getElementById("history-container");
-const clearButton = document.getElementById("clear-button");
 
 for (const callBtn of callButtons) {
   callBtn.addEventListener("click", function (e) {
@@ -59,14 +58,17 @@ for (const callBtn of callButtons) {
 
     `;
     historyContainer.appendChild(historyItems);
-
-    clearButton.addEventListener("click", function (e) {
-      historyContainer.innerHTML = "";
-    });
   });
 }
 
-// copy challenge part
+// Clear Button functionality
+
+const clearButton = document.getElementById("clear-button");
+clearButton.addEventListener("click", function (e) {
+  historyContainer.innerHTML = "";
+});
+
+// copy button functionality
 
 const copyButtons = document.getElementsByClassName("copy-button");
 const copyCounterValue = document.getElementById("copy-counter-value");
